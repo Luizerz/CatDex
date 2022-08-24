@@ -8,16 +8,18 @@
 import SwiftUI
 
 struct CardUIView: View {
+    
+    var breeds: CatsModel
     var body: some View {
         ZStack{
             VStack{
-                Image("template-gato")
+                Image(breeds.image)
                     .resizable()
                     .scaledToFit()
                     .cornerRadius(20)
                     .padding(20)
                     
-                Text("Raça do gato")
+                Text(breeds.name)
                     .padding(.bottom, 30)
             }
         }
@@ -28,6 +30,7 @@ struct CardUIView: View {
 
 struct CardUIView_Previews: PreviewProvider {
     static var previews: some View {
-        CardUIView().previewLayout(.sizeThatFits)
+        let cats = CatsModel(id: "1", name: "Nome Gato 1", image: "template-gato")
+        CardUIView(breeds: cats).previewLayout(.sizeThatFits)
     }
 }
