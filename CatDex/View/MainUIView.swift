@@ -9,6 +9,8 @@ import SwiftUI
 
 struct MainUIView: View {
     @State var text: String = ""
+    var littleCats = mockedCats().cats
+    
     var body: some View {
         
         let columnCount: Int = 2
@@ -19,9 +21,13 @@ struct MainUIView: View {
                 
                 ScrollView(.vertical) {
                     LazyVGrid(columns: Array(repeating: .init(.flexible(), spacing: gridSpacing), count: columnCount), spacing: gridSpacing) {
-                        CardUIView()
+                        
+                        ForEach(littleCats, id: \.self) { cats in
+                            CardUIView(breeds: cats)
+                        }
                     }
                 }
+                .padding()
             }
             .navigationTitle("HotCat")
             .navigationViewStyle(.columns)

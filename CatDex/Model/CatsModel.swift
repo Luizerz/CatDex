@@ -7,7 +7,8 @@
 
 import Foundation
 
-struct CatsModel : Codable {
+struct CatsModel : Codable, Hashable {
     let id: String
     let name: String
+    let image: String
 }
