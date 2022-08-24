@@ -8,8 +8,25 @@
 import SwiftUI
 
 struct MainUIView: View {
+    @State var text: String = ""
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        let columnCount: Int = 2
+        let gridSpacing: CGFloat = 16.0
+        
+        NavigationView{
+            VStack{
+                
+                ScrollView(.vertical) {
+                    LazyVGrid(columns: Array(repeating: .init(.flexible(), spacing: gridSpacing), count: columnCount), spacing: gridSpacing) {
+                        CardUIView()
+                    }
+                }
+            }
+            .navigationTitle("HotCat")
+            .navigationViewStyle(.columns)
+            .searchable(text: $text, placement: .navigationBarDrawer(displayMode: .always))
+        }
     }
 }
 
