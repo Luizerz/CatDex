@@ -17,7 +17,7 @@
 		DD43DD9F28B4F9E9000ABC71 /* MainUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD43DD9E28B4F9E9000ABC71 /* MainUIView.swift */; };
 		DD43DDA228B4FA40000ABC71 /* CardUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD43DDA128B4FA40000ABC71 /* CardUIView.swift */; };
 		DD43DDA428B4FA6C000ABC71 /* CatsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD43DDA328B4FA6C000ABC71 /* CatsModel.swift */; };
-		DD43DDA628B4FA7E000ABC71 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD43DDA528B4FA7E000ABC71 /* APIService.swift */; };
+		DD43DDA628B4FA7E000ABC71 /* catAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD43DDA528B4FA7E000ABC71 /* catAPI.swift */; };
 		DD43DDA828B4FA90000ABC71 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD43DDA728B4FA90000ABC71 /* MainViewController.swift */; };
 		DD43DDAA28B4FAAD000ABC71 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD43DDA928B4FAAD000ABC71 /* Extension.swift */; };
 /* End PBXBuildFile section */
@@ -53,7 +53,7 @@
 		DD43DD9E28B4F9E9000ABC71 /* MainUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainUIView.swift; sourceTree = "<group>"; };
 		DD43DDA128B4FA40000ABC71 /* CardUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardUIView.swift; sourceTree = "<group>"; };
 		DD43DDA328B4FA6C000ABC71 /* CatsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsModel.swift; sourceTree = "<group>"; };
-		DD43DDA528B4FA7E000ABC71 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		DD43DDA528B4FA7E000ABC71 /* catAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = catAPI.swift; sourceTree = "<group>"; };
 		DD43DDA728B4FA90000ABC71 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		DD43DDA928B4FAAD000ABC71 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -172,7 +172,7 @@
 		DD43DD9A28B4F966000ABC71 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				DD43DDA528B4FA7E000ABC71 /* APIService.swift */,
+				DD43DDA528B4FA7E000ABC71 /* catAPI.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -328,7 +328,7 @@
 				4F2809A428B3C938007E734D /* CatDexApp.swift in Sources */,
 				DD43DDA428B4FA6C000ABC71 /* CatsModel.swift in Sources */,
 				DD43DDA228B4FA40000ABC71 /* CardUIView.swift in Sources */,
-				DD43DDA628B4FA7E000ABC71 /* APIService.swift in Sources */,
+				DD43DDA628B4FA7E000ABC71 /* catAPI.swift in Sources */,
 				DD43DD9F28B4F9E9000ABC71 /* MainUIView.swift in Sources */,
 				DD43DDAA28B4FAAD000ABC71 /* Extension.swift in Sources */,
 			);

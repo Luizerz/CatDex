@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+struct CatsModel : Codable {
+    let id: String
+    let name: String
+}
