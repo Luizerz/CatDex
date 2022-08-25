@@ -35,7 +35,7 @@ class CatAPI {
             .validate(statusCode: 200..<300)
             .serializingDecodable([CatsModel].self, automaticallyCancelling: true, decoder: decoder)
             .value
-        print(cats)
+//        print(cats)
         return cats
     }
 }

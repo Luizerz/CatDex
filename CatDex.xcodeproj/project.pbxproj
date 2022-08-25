@@ -14,6 +14,7 @@
 		4F2809B528B3C93C007E734D /* CatDexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2809B428B3C93C007E734D /* CatDexTests.swift */; };
 		4F2809BF28B3C93C007E734D /* CatDexUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2809BE28B3C93C007E734D /* CatDexUITests.swift */; };
 		4F2809C128B3C93C007E734D /* CatDexUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2809C028B3C93C007E734D /* CatDexUITestsLaunchTests.swift */; };
+		4F4924B528B7F7C600240329 /* ShitUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4924B428B7F7C600240329 /* ShitUIView.swift */; };
 		DD43DD9F28B4F9E9000ABC71 /* MainUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD43DD9E28B4F9E9000ABC71 /* MainUIView.swift */; };
 		DD43DDA228B4FA40000ABC71 /* CardUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD43DDA128B4FA40000ABC71 /* CardUIView.swift */; };
 		DD43DDA428B4FA6C000ABC71 /* CatsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD43DDA328B4FA6C000ABC71 /* CatsModel.swift */; };
@@ -52,6 +53,7 @@
 		4F2809BA28B3C93C007E734D /* CatDexUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatDexUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F2809BE28B3C93C007E734D /* CatDexUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatDexUITests.swift; sourceTree = "<group>"; };
 		4F2809C028B3C93C007E734D /* CatDexUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatDexUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4F4924B428B7F7C600240329 /* ShitUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShitUIView.swift; sourceTree = "<group>"; };
 		DD43DD9E28B4F9E9000ABC71 /* MainUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainUIView.swift; sourceTree = "<group>"; };
 		DD43DDA128B4FA40000ABC71 /* CardUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardUIView.swift; sourceTree = "<group>"; };
 		DD43DDA328B4FA6C000ABC71 /* CatsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsModel.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 				4F2809A328B3C938007E734D /* CatDexApp.swift */,
 				4F2809A528B3C938007E734D /* ContentView.swift */,
 				DD43DD9E28B4F9E9000ABC71 /* MainUIView.swift */,
+				4F4924B428B7F7C600240329 /* ShitUIView.swift */,
 				DD43DDA028B4FA2B000ABC71 /* Components */,
 			);
 			path = View;
@@ -339,6 +342,7 @@
 				4F2809A428B3C938007E734D /* CatDexApp.swift in Sources */,
 				DD43DDA428B4FA6C000ABC71 /* CatsModel.swift in Sources */,
 				DD43DDA228B4FA40000ABC71 /* CardUIView.swift in Sources */,
+				4F4924B528B7F7C600240329 /* ShitUIView.swift in Sources */,
 				DD43DDA628B4FA7E000ABC71 /* catAPI.swift in Sources */,
 				DD43DD9F28B4F9E9000ABC71 /* MainUIView.swift in Sources */,
 				DD43DDAA28B4FAAD000ABC71 /* Extension.swift in Sources */,
