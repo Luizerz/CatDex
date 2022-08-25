@@ -20,7 +20,6 @@
 		DD43DDA628B4FA7E000ABC71 /* catAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD43DDA528B4FA7E000ABC71 /* catAPI.swift */; };
 		DD43DDA828B4FA90000ABC71 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD43DDA728B4FA90000ABC71 /* MainViewController.swift */; };
 		DD43DDAA28B4FAAD000ABC71 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD43DDA928B4FAAD000ABC71 /* Extension.swift */; };
-		DD43DDAC28B64C18000ABC71 /* removebgAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD43DDAB28B64C18000ABC71 /* removebgAPI.swift */; };
 		DD43DDAE28B64D3F000ABC71 /* RemovebgModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD43DDAD28B64D3F000ABC71 /* RemovebgModel.swift */; };
 		DD43DDB128B64DD5000ABC71 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = DD43DDB028B64DD5000ABC71 /* Alamofire */; };
 /* End PBXBuildFile section */
@@ -59,7 +58,6 @@
 		DD43DDA528B4FA7E000ABC71 /* catAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = catAPI.swift; sourceTree = "<group>"; };
 		DD43DDA728B4FA90000ABC71 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		DD43DDA928B4FAAD000ABC71 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
-		DD43DDAB28B64C18000ABC71 /* removebgAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = removebgAPI.swift; sourceTree = "<group>"; };
 		DD43DDAD28B64D3F000ABC71 /* RemovebgModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemovebgModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,13 +111,11 @@
 			isa = PBXGroup;
 			children = (
 				DD43DD9728B4F956000ABC71 /* View */,
-				4F2809A328B3C938007E734D /* CatDexApp.swift */,
-				4F2809A528B3C938007E734D /* ContentView.swift */,
-				DD43DD9B28B4F985000ABC71 /* Extension */,
 				DD43DD9828B4F95D000ABC71 /* Model */,
 				DD43DD9928B4F962000ABC71 /* Controller */,
 				DD43DD9A28B4F966000ABC71 /* Service */,
 				4F2809A728B3C93C007E734D /* Assets.xcassets */,
+				DD43DD9B28B4F985000ABC71 /* Extension */,
 				4F2809A928B3C93C007E734D /* Preview Content */,
 			);
 			path = CatDex;
@@ -153,8 +149,10 @@
 		DD43DD9728B4F956000ABC71 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				DD43DDA028B4FA2B000ABC71 /* Components */,
+				4F2809A328B3C938007E734D /* CatDexApp.swift */,
+				4F2809A528B3C938007E734D /* ContentView.swift */,
 				DD43DD9E28B4F9E9000ABC71 /* MainUIView.swift */,
+				DD43DDA028B4FA2B000ABC71 /* Components */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -180,7 +178,6 @@
 			isa = PBXGroup;
 			children = (
 				DD43DDA528B4FA7E000ABC71 /* catAPI.swift */,
-				DD43DDAB28B64C18000ABC71 /* removebgAPI.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -346,7 +343,6 @@
 				DD43DD9F28B4F9E9000ABC71 /* MainUIView.swift in Sources */,
 				DD43DDAA28B4FAAD000ABC71 /* Extension.swift in Sources */,
 				DD43DDAE28B64D3F000ABC71 /* RemovebgModel.swift in Sources */,
-				DD43DDAC28B64C18000ABC71 /* removebgAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

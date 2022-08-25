@@ -11,6 +11,13 @@ struct ContentView: View {
     var body: some View {
         Text("Hello, world!")
             .padding()
+        Button(action: {
+            Task {
+                await CatAPI.getAllBreesAsync()
+            }
+        }, label: {
+            Text("AOBA")
+        })
     }
 }
 

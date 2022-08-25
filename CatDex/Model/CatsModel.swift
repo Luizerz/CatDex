@@ -7,8 +7,23 @@
 
 import Foundation
 
-struct CatsModel : Codable, Hashable {
+
+
+struct ImageCat : Codable, Hashable {
+    let id: String
+    let width: Int
+    let height: Int
+    let url: String?
+
+}
+
+struct CatsModel : Codable, Hashable, Equatable {
     let id: String
     let name: String
-    let image: String
+    let image: ImageCat?
+
+    var imageURL: URL {
+        URL(string: self.image!.url!)!
+    }
 }
+

@@ -9,21 +9,20 @@ import SwiftUI
 
 struct MainUIView: View {
     @State var text: String = ""
-    var littleCats = mockedCats().cats
+    @State var littleCats:[CatsModel] = []
+
+    let columnCount: Int = 2
+    let gridSpacing: CGFloat = 16.0
     
     var body: some View {
-        
-        let columnCount: Int = 2
-        let gridSpacing: CGFloat = 16.0
-        
         NavigationView{
             VStack{
-                
                 ScrollView(.vertical) {
                     LazyVGrid(columns: Array(repeating: .init(.flexible(), spacing: gridSpacing), count: columnCount), spacing: gridSpacing) {
                         
                         ForEach(littleCats, id: \.self) { cats in
                             CardUIView(breeds: cats)
+                                .frame(width: 100, height: 100)
                         }
                     }
                 }
@@ -32,6 +31,12 @@ struct MainUIView: View {
             .navigationTitle("HotCat")
             .navigationViewStyle(.columns)
             .searchable(text: $text, placement: .navigationBarDrawer(displayMode: .always))
+            .onAppear {
+                Task {
+//                    littleCats = await CatAPI.getAllBreesAsync()
+                }
+
+            }
         }
     }
 }
