@@ -17,9 +17,15 @@ struct ShitUIView_: View {
                         littleCats = await CatAPI.getAllBreesAsync()
                     }
                 }
+            VStack{
+                AsyncImage(url: littleCats.randomElement()?.imageURL, content: { image in
+                    image.image?.resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(maxWidth: 150, maxHeight: 150)
+                })
 
-            AsyncImage(url: littleCats.randomElement()?.imageURL)
-                .frame(width: 300, height: 300)
+            }
+
         }
 
 

@@ -10,9 +10,7 @@ import Foundation
 
 
 struct ImageCat : Codable, Hashable {
-    let id: String
-    let width: Int
-    let height: Int
+    let id: String?
     let url: String?
 
 }
@@ -22,8 +20,10 @@ struct CatsModel : Codable, Hashable, Equatable {
     let name: String
     let image: ImageCat?
 
-    var imageURL: URL {
-        URL(string: self.image!.url!)!
+    var imageURL: URL? {
+        if let urlString = image?.url, let url = URL(string: urlString) {
+            return url
+        }
+        return nil
     }
 }
-

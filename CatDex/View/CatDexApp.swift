@@ -11,7 +11,7 @@ import SwiftUI
 struct CatDexApp: App {
     var body: some Scene {
         WindowGroup {
-            ShitUIView_()
+            MainUIView()
         }
     }
 }

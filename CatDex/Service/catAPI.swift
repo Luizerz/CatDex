@@ -42,10 +42,10 @@ class CatAPI {
 
 struct MockedCats {
     let cats: [CatsModel] = [
-        CatsModel(id: "1", name: "Nome Gato 1", image: ImageCat(id: "",width: 1, height: 1 ,url: "")),
-        CatsModel(id: "2", name: "Nome Gato 2", image: ImageCat(id: "",width: 1, height: 1 ,url: "")),
-        CatsModel(id: "3", name: "Nome Gato 3", image: ImageCat(id: "",width: 1, height: 1 ,url: "")),
-        CatsModel(id: "4", name: "Nome Gato 4", image: ImageCat(id: "",width: 1, height: 1 ,url: ""))
+        CatsModel(id: "1", name: "Nome Gato 1", image: ImageCat(id: "",url: "")),
+        CatsModel(id: "2", name: "Nome Gato 2", image: ImageCat(id: "",url: "")),
+        CatsModel(id: "3", name: "Nome Gato 3", image: ImageCat(id: "",url: "")),
+        CatsModel(id: "4", name: "Nome Gato 4", image: ImageCat(id: "",url: ""))
     ]
 }
 
